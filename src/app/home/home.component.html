@@ -1,0 +1,24 @@
+<h1>Home</h1>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis maxime minus consequatur possimus, quaerat similique quo culpa dignissimos molestiae, unde libero incidunt tenetur aspernatur distinctio non voluptatibus saepe consequuntur necessitatibus.
+  <br><br><br>
+
+
+Catageris
+
+<select [(ngModel)]="cater" (click)="clicked()" class="bg-primary text-white">
+
+  <option *ngFor="let cater of catageries" value="{{cater}}" class="bg-warning">{{cater}}</option>
+</select>
+
+<select [(ngModel)]="fru" >
+  <option *ngFor="let fruit of fruits" value="{{fruit}}">{{fruit}}</option>
+</select>
+
+
+<div class="bg-warning border-1 m-5 p-2 w-25" >
+
+Your Favaourite {{cater}} is {{fru}}
+
+</div>
+

@@ -1,0 +1,37 @@
+<h1 class="bg-warning  text-center p-3">Angular project</h1>
+
+<div class="bg-info p-2" >
+<a routerLink="" class="p-5 text-light"></a>
+<a routerLink="/home" class="p-5 text-light">Home</a>
+<a routerLink="/about" class="p-5 text-light">About</a>
+<a routerLink="/services" class="p-5 text-light">Services</a>
+<a routerLink="/contact" class="p-5 text-light">Contact</a>
+</div>
+<hr>
+
+<router-outlet></router-outlet><hr><hr>
+
+<h2>Component Communication</h2>
+
+
+<hr><br><br>
+
+<div class="container">
+<div class="row">
+
+  <h2>Parent Component</h2>
+  <div class="col-lg-6">
+
+    <div class="form-group">
+      <label for="">Enter Your Name:</label><br>
+      <input type="text" class="form-control" [(ngModel)]="name">
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <app-child [username] = "name"></app-child>
+  </div>
+</div>
+
+
+<hr><hr>
+</div>
